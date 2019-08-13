@@ -48,6 +48,7 @@ form {
   left:0;
   bottom:0;
   width:400px;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.3);
 }
 
 form .field {
@@ -77,8 +78,9 @@ form button {
   border-radius:50%;
   cursor:pointer;
   position:absolute;
-  bottom:10px;
-  left:10px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+  bottom:60px;
+  left:50px;
 }
 
 #book-details {
