@@ -2,7 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const Sequelize = require('sequelize');
-const models = require('./models');
+const cors = require('cors');
 
 const sequelize = new Sequelize('lib', 'root', '', {
   host: 'localhost',
@@ -15,7 +15,7 @@ const sequelize = new Sequelize('lib', 'root', '', {
 
 const app = express();
 
-
+app.use(cors());
 
 
 app.use('/graphql', graphqlHTTP(
